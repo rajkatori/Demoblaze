@@ -1,0 +1,10 @@
+{
+  "name": "Demoblaze",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rajkatori/Demoblaze.git",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^12.3.0"
+  }
+}
