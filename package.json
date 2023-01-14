@@ -8,6 +8,6 @@
     "cypress": "^12.3.0"
   },
   "scripts":{
-    "ff": "npx cypress open --e2e --browser firefox"
+    "ff": "npx cypress open --e2e --browser chrome"
   }
 }
