@@ -6,7 +6,8 @@ beforeEach(()=>{
 
 it('TC-CONTACT-001: Verify that user can click the contact  in  nav-link and 3 input box should be available. ',()=>{
     cy.get(':nth-child(2) > .nav-link').click().wait(2000)
-    cy.get('.form-control').each(el=>{
+    cy.get('#exampleModal.show .form-control').should('have.length',3)
+    .each(el=>{
         console.log(el)
         cy.wrap(el).type("raj")
     })
