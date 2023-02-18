@@ -1,6 +1,3 @@
-
-
-
 const homepage = 'https://www.demoblaze.com/index.html'		
 describe('homepage test cases ', () => {
   beforeEach(()=>{
@@ -37,7 +34,13 @@ describe('homepage test cases ', () => {
     cy.get('div.list-group > :nth-child(3)').click().wait(2000)
     cy.get('div.list-group > :nth-child(4)').click().wait(2000)
   })
-  })
+
+  it('',()=>{'TC-HOME-002: Verify that all the buttons under Categories tab is working and contains THREE different items'
+    cy.get('#itemc.list-group-item').should('have.length',3)
+})
+
+})
+  
 
 
   
