@@ -5,7 +5,8 @@ beforeEach(()=>{
 })
 it('TC-ABOUT-001: Verify that video option is displayed when user click about us icon',()=>{
     cy.get(':nth-child(3) > .nav-link').click().wait(2000)
-    cy.get('.vjs-poster').click()
+    cy.get('.vjs-poster').click().wait(2000)
+    cy.reload(true)
 })
 
 })
